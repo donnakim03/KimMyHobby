@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to calculate lesson costs.</p>
+
+<div class="box">
+    <p>Current Hourly Rate = $25 per hour</p>
+</div>
+<br /><br />
+<div class="calculator">
+    <p>Calculator</p>
+
+    <label for="hours">Enter Number of Hours:</label>
+    <input type="number" id="hours" placeholder="Enter hours" min="0">
+
+    <button id="calculateBtn">Calculate Total</button>
+</div>
+<br /><br />
+<div class="box">
+    <p id="result">Total Cost: $<span id="totalCost"></span></p>
+</div>
